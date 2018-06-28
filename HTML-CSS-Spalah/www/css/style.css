@@ -1,0 +1,29 @@
+
+*{
+	box-sizing: border-box; /* ограничивает размеры блоков помогает при 
+	контроле их размеров и они не ползут */
+}
+.bl-header{
+	color: black;
+	height: 300px;
+	width: 300px;
+	background-color: red;
+	padding: 30px 15px;
+	margin: 35px;
+	display: inline-block;/* начинает вести себя как строчный и болочный элемент */
+
+}
+.bl-yellow{
+	background-color: green;
+	width: 100px;
+	height: 100px;
+
+}
+main{
+	height: 100px;
+	background-color: yellow;
+	border: 1px solid black;/* толщина линии, тип линии, цвет */
+}
+footer{
+	background-color: black;
+}
