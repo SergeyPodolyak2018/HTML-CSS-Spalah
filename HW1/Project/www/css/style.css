@@ -1,0 +1,31 @@
+*{
+	box-sizing: border-box;
+}
+
+.header{
+	padding: 30px 45px;
+	height: 150px;
+	background-color: #006064;
+
+}
+.content{
+
+}
+.footer{
+	margin-top: 35px;
+	background-color: #80d6ff;
+	padding: 35px 15px;
+}
+
+.footer a{
+	margin-right: 15px;
+}
+
+.news{
+	width: 250px;
+	margin-right: 35px;
+	background-color: #c158dc;
+	padding: 35px 15px;
+	border: 1px solid black;
+	display: inline-block;
+}
