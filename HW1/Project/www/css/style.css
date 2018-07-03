@@ -1,6 +1,9 @@
 *{
 	box-sizing: border-box;
 }
+body{
+	margin: 0px; /* убирает предустановленные стили в боди в котором есть заложенный отступ */
+}
 
 .header{
 	padding: 30px 45px;
