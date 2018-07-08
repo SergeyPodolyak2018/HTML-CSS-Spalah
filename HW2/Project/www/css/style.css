@@ -1,0 +1,42 @@
+body{
+  margin:0px;
+}
+ul {
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  display: inline-block;
+}
+
+li a{
+	color: #666;
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: bolder;
+  font-family:Arial;
+  text-transform: uppercase;
+  background-color: #e0e0e0;
+
+}
+
+a{
+	text-decoration: none;
+  outline: none;
+}
+
+.sub {     
+    position: absolute;
+    padding: 0px; 
+}
+
+.sub li{
+     display: block;    
+}
+
+.nav_first_level{
+  float:left;
+}

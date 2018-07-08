@@ -1,0 +1,51 @@
+body{
+  margin:0px;
+}
+/* Первый способ  использовать блок распорку*/
+.div1{
+  background-color: green; 
+  width: 250px; 
+  height: 350px;
+  float:left;
+}
+.div2{
+  background-color: red; 
+  width: 250px; 
+  height: 350px;
+  float:right;
+  
+}
+.div5{
+  background-color: lime; 
+  width: 250px; 
+  height: 350px;
+  margin: 0 auto;
+  
+}
+.wrapper{
+  max-width: 800px;
+  margin: 0 auto 15px; /* автоматически делает отступы с лева и права */
+}
+.clear{
+  clear: both;
+}
+.clearfix:after{
+  display: block;
+  content: '';
+  clear: both;
+}
+/* второй способ сделать элементы инлайновыми*/
+.div3{
+  background-color: aqua; 
+  width: 250px; 
+  height: 350px;
+  display: inline-block;
+  
+}
+.div4{
+  background-color: blue; 
+  width: 250px; 
+  height: 350px;  
+  display: inline-block;
+  float: right;
+}
