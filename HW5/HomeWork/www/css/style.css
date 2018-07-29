@@ -1,0 +1,45 @@
+body{
+  margin:0px;
+}
+a{
+  text-decoration: none;
+  outline: none;
+  padding: 5px 5px;
+  background-color: aqua;
+  display: inline-block;
+}	
+*{
+	box-sizing: border-box;
+
+}
+.wrapper{
+	max-width: 900px;
+	margin: 0 auto;
+}
+.main{
+	position: relative;
+}
+.main > li{
+	display: inline-block;
+}
+.main li > a:hover + ul{
+	display: block;
+}
+.secondLayer{
+	/* display: block; */
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	display: none;
+
+}
+.secondLayer:hover{
+	display: block;
+}
+.secondLayer > li{
+	display: block;
+	
+}
+.niger{
+	float: right;
+}

@@ -1,0 +1,30 @@
+body{
+  margin:0px;
+}
+.bl-green{
+	background-color: red;
+	background-image: linear-gradient(to top,red,black);
+	height: 300px;
+	width: 300px;
+	margin: 25px auto;
+	box-shadow: 0 0 10px 0 black;
+
+}
+.test-linck{
+	display: inline-block;
+	margin: 35px auto;
+	padding: 25px 35px;
+	border-radius: 10px;
+	text-decoration: none;
+	color: white;
+	background-color: green;
+	transition:background-color 0.1s ;/* cubic-bezier() кривая безье */
+	/* транзитион распространяется на все события */
+}
+/* материал дезайн есть комбинации */
+.test-linck:hover{
+	background-color: orange;
+	transform: translateY(-3px);
+	box-shadow: 0 0 10px 0 black;
+/* транзитион распространяется  события только ховер*/
+}

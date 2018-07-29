@@ -1,0 +1,13 @@
+
+/* мобильная версия начинается с 719рх  */
+@media(max-width: 350px){
+	body{
+		padding: 0 15px;
+	}
+
+	.mainBlock{
+
+		background-color: red;
+	
+	}
+}

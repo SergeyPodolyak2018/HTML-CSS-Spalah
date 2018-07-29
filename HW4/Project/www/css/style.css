@@ -1,0 +1,115 @@
+body{
+  margin:0px;
+  font-size: 36px;
+  text-align: center;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+/* ----------------------------------------------------------------------------------- */
+.flex{
+  display: flex;  /* задать родителю*/
+ /*  display: inline-flex; */ /* анимает ширину контента */
+  background-color: green;
+  padding: 25px 0px;
+  /* width: 50%; */
+  height: 600px;
+  /* горизонтальное выравнивание */
+  justify-content: flex-start;          /* левый угол */
+  justify-content: flex-end;            /* правый край */
+  justify-content: space-between;       /* пространство между блоками */
+  justify-content: space-around;        /* равномерно распредилить блоки */
+  justify-content: space-evenly;        /* совсем равномерный  не поддерживается*/
+  justify-content: center;              /* центровка  */
+
+  /* вертикальное выравнивание */
+  align-items: center;                    /* центрирует по горизонтали либо вертикали но при наличии размера */
+
+  /* flex-direction: column; */            /* все станет колонкой */
+  /* flex-direction: column-reverse; */    /* все станет колонкой реверсивной */
+
+  /* flex-wrap: wrap; */                         /* перенос по стокам */ 
+ /*  flex-flow: column wrap;  */                  /* несколько свойств */
+
+}
+.child{
+  background-color: yellow;
+  height: 150px;
+  margin-bottom: 25px;
+  width: 250px;
+  border: 1px solid black;
+
+  flex-basis: 250px; /* считает размер по оси при развороте ширина станет высотой */
+
+}
+.child2{
+  height: 350px;
+  flex-shrink: 2; /* коэфициент сжимаемости */
+  
+
+
+}
+
+.first_child{
+  order: -3; /* типа z индех */
+  flex-grow: 1;  /* седает пустоту в зависимости от коэфициента  */
+  align-self: flex-end;/*  свойство ребенка которое центрирует именно его относительно родителя */
+}
+
+
+/* Селекторы */
+
+
+/* селектор включающий свойство элемента */
+input[type='text']{
+  color: red;
+}
+input[type='email']{
+  color: green;
+}
+/* искать элемент в классе с классом */
+.flex .child2{
+  color: red;
+}
+
+/* .flex div:first-child{
+  background-color: red;
+} */
+
+/* номер ребенка с единици */
+/* .flex div:nth-child(2){
+  background-color: aqua;
+} */
+
+/* четный */
+/* .flex div:nth-child(2n){
+  background-color: aqua;
+} */
+
+/* не четный */
+/* .flex div:nth-child(2n-1){
+  background-color: aqua;
+} */
+
+/* все кроме последнего  используется отрицание*/
+.flex div:not(:last-child){
+  margin-right: 30px;
+}
+
+/* селекторы событий */
+.link{
+text-decoration: none;
+}
+.link:hover{
+  text-decoration: underline;
+}
+.link:active{
+  color: red;
+}
+
+/* обязательно к использованию */
+.link:focus{
+  outline: 0;
+}

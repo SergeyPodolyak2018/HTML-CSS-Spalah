@@ -1,0 +1,89 @@
+body{
+  margin:0px;
+}
+.bounce{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background-color: red;
+	
+	
+}
+.Animation{
+	/* анимация */
+	animation-name: toGreen,toRight;
+	animation-duration: 5s;
+	animation-iteration-count: infinite; /* бесконечно выполнять */
+	
+
+}
+.Animation1{
+	
+	animation-delay: 2s;
+
+}
+.Animation2{
+	/* анимация */
+	
+	animation-delay: 3s;
+
+}
+.Animation3{
+	
+	animation-delay: 4s;
+
+}
+.bounce:hover{
+	animation-play-state: paused;/* поставить анимацию на паузу */
+}
+.text{
+	width: 100%;
+	/* margin-left: 100px; */
+	animation-name: resizeWidth;
+	animation-duration: 5s;
+	animation-iteration-count: infinite; /* бесконечно выполнять */
+}
+
+
+/* описание анимации от 0 до 100% */
+@keyframes toGreen{
+	0%{
+		background-color: red;
+		border-radius: 50%;
+	}
+	50%{
+		background-color: aqua;
+		border-radius: 30%;
+	}
+	100%{
+		background-color: green;
+		border-radius: 50%;
+	}
+}
+
+@keyframes toRight{
+	0%{
+		transform: translateX(0);
+	}
+	50%{
+		transform: translateX(100%);
+	}
+	100%{
+		transform: translateX(0);
+	}
+}
+
+@keyframes resizeWidth{
+	0%{
+		width: 100%;
+		margin-left: 100%;
+	}
+	50%{
+		width: 30%;
+		margin-left: 0px;
+	}
+	100%{
+		width: 100%;
+		margin-left: 100%;
+	}
+}

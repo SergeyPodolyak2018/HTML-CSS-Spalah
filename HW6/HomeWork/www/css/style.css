@@ -1,0 +1,90 @@
+body{
+  margin:0px;
+  font-family: "Montserrat";
+}
+p{
+  margin:0;
+}
+a{
+  text-decoration: none;
+  outline: none;
+}
+.mainBlock{
+	display: flex;
+	flex-direction: column;	
+	align-items: center;
+	width: 350px;
+	height: 532px;
+	box-shadow: 1px 2px 7px 2px rgba(0, 0, 0, 0.19);
+	background-color: #ffffff;
+	margin:  35px auto;
+	padding-top: 47px;
+}
+.headertext{
+	text-align: center;
+	color: #4a4a4a;
+	
+	font-size: 24px;
+	font-weight: 400;
+	margin-bottom: 32px;
+}
+.faceBookButton{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 310px;
+	height: 53px;
+	border: 1px solid #3c5998;
+	background-color: #405d9a;
+	color: #ffffff;
+	
+	font-size: 16px;
+	font-weight: 700;
+	margin-bottom: 16px;
+}
+.faceBookButton img{
+	margin-right: 8px;
+}
+.divWithOr{
+	width: 310px;
+	height: 47px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #b5b5b5;	
+	font-size: 13px;
+	font-weight: 400;
+	margin-bottom: 16px;
+}
+.butoomLine{
+	width: 137px;
+	height: 1px;
+	background-color: #e1e1e1;
+}
+.formFields{
+	width: 272px;
+	height: 47px;
+	border: 1px solid #e1e1e1;
+	background-color: #fff;
+	color: #b5b5b5;	
+	font-size: 13px;
+	font-weight: 400;	
+	margin-bottom: 16px;
+	padding: 0px 19px;
+
+}
+.fieldsContainer{
+	display: flex;
+	flex-direction: column;	
+	align-items: center;
+}
+
+.formButton{
+	width: 310px;
+	height: 53px;
+	border: 1px solid #de693e;
+	background-color: #f27242;
+	color: #ffffff;	
+	font-size: 16px;
+	font-weight: 700;
+}
