@@ -1,0 +1,25 @@
+@import "variable";
+// переменная
+@hero-text:~'.hero-text';
+
+.hero{
+	background-image: url("../img/hero-img.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	text-align: center;
+
+}
+
+@{hero-text}{
+	&-title{
+		color: @wight;
+		font-size: 48px;
+		font-weight: 400;
+	}
+	&-wrapper{
+		
+	}
+
+}
+
