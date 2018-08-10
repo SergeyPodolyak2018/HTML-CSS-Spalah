@@ -1,6 +1,7 @@
 @import "variable";
 // переменная
 @hero-text:~'.hero-text';
+@hamburger:~'.hamburger';
 
 .hero{
 	background-image: url("../img/hero-img.jpg");
@@ -8,18 +9,109 @@
 	background-position: center;
 	height: 100vh;
 	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+	padding: 60px 50px 50px;
 
+	.divider{
+		margin: 0 auto 40px;
+	}
+}
+
+.mouse{
+	width: 30px;
+	height: 48px;
+	background-color: @wight;
+	border-radius: 25px;
+	position: relative;
+	&:before{
+		content: '';
+		background-color: #d26e54;
+		width: 5px;
+		height: 11px;
+		border-radius: 25px;
+		position: absolute;
+		transform: translateX(-50%);
+		top:10px;
+		animation-name: HerotoDown;
+		animation-duration: 2s;
+		animation-iteration-count: infinite;
+
+
+	}
+}
+@{hamburger}{
+	width: 30px;
+	height: 24px;
+	align-self: flex-start;
+	position: relative;
+	
+	&:after, &:before,&-katlet{
+		width: 30px;
+		height: 3px;
+		position: absolute;
+		background-color: @wight;
+	}
+
+	&:after, &:before{
+		content: '';
+		display: block;		
+	}
+	&:after{		
+		bottom: 0%;		
+	}
+	&:before{		
+		top: 0%;		
+	}
+	&-katlet{		
+		top: 50%;
+		transform: translateY(-50%);		
+	}
+	&:hover,
+	&--active{
+		transition: 
+		@{hamburger}-katlet{
+			display: none;
+		}
+
+		&:after{		
+			transform: rotate(45deg);
+			top:0px;		
+		}
+
+		&:before{		
+			transform: rotate(-45deg);
+			top:0px;		
+		}
+	}
 }
 
 @{hero-text}{
-	&-title{
-		color: @wight;
+	&-title{		
 		font-size: 48px;
-		font-weight: 400;
+		font-weight: bold;
+		margin-bottom: 50px;
+		font-family: 'big_johnregular';
 	}
 	&-wrapper{
-		
+		max-width: 655px;
+		color: @wight;
 	}
-
+	&-discription{
+		font-weight: normal;
+	}
 }
 
+
+@keyframes HerotoDown{
+	0%{
+		top: 10px;
+	}
+	
+	100%{
+		top: 40px;
+		opacity: 0;
+	}
+}
