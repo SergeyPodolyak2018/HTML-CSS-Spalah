@@ -53,11 +53,13 @@
 		height: 3px;
 		position: absolute;
 		background-color: @wight;
+		transition:0.5s
 	}
 
 	&:after, &:before{
 		content: '';
-		display: block;		
+		display: block;
+		
 	}
 	&:after{		
 		bottom: 0%;		
@@ -69,23 +71,23 @@
 		top: 50%;
 		transform: translateY(-50%);		
 	}
-	&:hover,
-	&--active{
-		transition: 
+	&:hover{
+		
 		@{hamburger}-katlet{
 			display: none;
 		}
 
 		&:after{		
 			transform: rotate(45deg);
-			top:0px;		
+			top:50%;		
 		}
 
 		&:before{		
 			transform: rotate(-45deg);
-			top:0px;		
+			top:50%;		
 		}
 	}
+	
 }
 
 @{hero-text}{

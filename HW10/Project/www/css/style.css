@@ -205,6 +205,26 @@ body {
 .grey {
   background-color: #fffefe;
 }
+.black {
+  background-color: #222222;
+}
+.section-heder {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 74px;
+  font-family: 'big_johnregular';
+  color: #222222;
+}
+.button {
+  padding: 40px 100px;
+  border: 3px solid #ffffff;
+  color: #ffffff;
+  font-family: 'ambleregular';
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 1.2px;
+}
 .hero {
   background-image: url("../img/hero-img.jpg");
   background-size: cover;
@@ -253,6 +273,7 @@ body {
   height: 3px;
   position: absolute;
   background-color: #fffefe;
+  transition: 0.5s;
 }
 .hamburger:after,
 .hamburger:before {
@@ -269,19 +290,16 @@ body {
   top: 50%;
   transform: translateY(-50%);
 }
-.hamburger:hover .hamburger-katlet,
-.hamburger--active .hamburger-katlet {
+.hamburger:hover .hamburger-katlet {
   display: none;
 }
-.hamburger:hover:after,
-.hamburger--active:after {
+.hamburger:hover:after {
   transform: rotate(45deg);
-  top: 0px;
+  top: 50%;
 }
-.hamburger:hover:before,
-.hamburger--active:before {
+.hamburger:hover:before {
   transform: rotate(-45deg);
-  top: 0px;
+  top: 50%;
 }
 .hero-text-title {
   font-size: 48px;
@@ -304,4 +322,51 @@ body {
     top: 40px;
     opacity: 0;
   }
+}
+.introduction {
+  background-color: #fffefe;
+  height: 55vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.introduction .divider {
+  margin: 0 auto 70px;
+}
+.creativity {
+  background-image: url("../img/creativity.png");
+  background-size: cover;
+  background-position: center;
+  height: 55vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.work {
+  background-color: #fffefe;
+  height: 55vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 50px 50px;
+}
+.work-wrapper {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.work-wrapper .divider {
+  margin: 0 auto 40px;
+}
+.work-wrapper-work_type {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
