@@ -1,0 +1,49 @@
+@import 'variable';
+@portfolio:~'.portfolio';
+@sec-portfolio:~'.section-portfolio';
+
+
+
+@{sec-portfolio}{
+	background-color:@wight;	
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;	
+	padding: 60px 50px 50px;	
+}
+
+@{portfolio}{
+	text-align: center;
+	&__titles-link{
+		font-family: 'slim_joeregular';
+		color: black;
+		text-transform: uppercase;
+		font-size: 18px;
+		padding: 0 10px;
+		position: relative;
+		display: inline-block;
+		
+		&.active{			
+			font-family: 'big_johnregular';
+		}
+		&:before{
+			display: block;
+			content: '';
+			width: 0;
+			height: 2px;
+			background-color: @black;
+			position: absolute;
+			bottom: -3px;
+			left: 0;
+			transition: 0.2s;
+		}
+		&:hover{
+			&:before{
+				width: 100%;
+			}
+		}
+	}
+	
+}

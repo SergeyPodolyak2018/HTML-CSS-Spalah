@@ -1,0 +1,20 @@
+@import "variable";
+@button:~'.button';
+
+@{button}{
+	min-width: 430px;
+	padding:29px;
+	border: 3px solid @wight;
+	color: #ffffff;
+	font-family: 'ambleregular';
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 60px;	
+	letter-spacing: 1.2px;
+	text-align: center;
+	transition: 0.2s;
+	&:hover{
+		background-color: @wight;
+		color: black;
+	}
+}
