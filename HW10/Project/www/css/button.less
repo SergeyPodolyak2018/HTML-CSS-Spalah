@@ -1,5 +1,6 @@
 @import "variable";
 @button:~'.button';
+@button-b:~'.button-black';
 
 @{button}{
 	min-width: 430px;
@@ -16,5 +17,22 @@
 	&:hover{
 		background-color: @wight;
 		color: black;
-	}
+	}	
+}
+@{button-b}{
+	min-width: 370px;
+	padding:10px 90px 10px 90px;
+	border: 3px solid @black;
+	color: @black;
+	font-family: 'ambleregular';
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 60px;	
+	letter-spacing: 1.2px;
+	text-align: center;
+	transition: 0.2s;
+	&:hover{
+		background-color: @black;
+		color: @wight;
+	}	
 }

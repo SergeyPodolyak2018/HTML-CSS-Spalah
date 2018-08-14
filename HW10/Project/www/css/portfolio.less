@@ -16,6 +16,11 @@
 
 @{portfolio}{
 	text-align: center;
+	max-width:1170px;
+	margin: 0 auto;
+	&__titles{
+		margin-bottom:30px;
+	}
 	&__titles-link{
 		font-family: 'slim_joeregular';
 		color: black;
@@ -45,5 +50,77 @@
 			}
 		}
 	}
+	&__items{
+		display:flex;
+		flex-wrap: wrap;
+		justify-content:space-between;	
+		margin-bottom:80px;	
+		& .new-string{
+			width:100%;
+			height:20px;
+		}
+	}
+	&__item{		
+		&:hover{
+			// border: 8px solid #000000;
+			& @{portfolio}__card-information{								
+				left:0%							
+			}
+
+			& @{portfolio}__card-information-fon{								
+				right:0%							
+			}
+		}
+	}
+	&__card{
+		overflow:hidden;
+		position:relative;
+		&-information{
+			color:@wight;
+			font-weight: 400;			
+			position:absolute;
+			width:370px;
+			height:420px;
+			left:-100%;
+			transition: 0.2s;
+			top:0px;
+			z-index:100;
+			padding-top:160px;
+			
+		}
+		&-information-fon{					
+			position:absolute;
+			width:370px;
+			height:420px;
+			right:-100%;
+			transition: 0.2s;
+			top:0px;
+			z-index:50;
+			background-color:@black;
+			opacity: 0.4;
+		}
+		
+		&-name{
+			font-family: "big_johnregular";
+			font-size: 18px;
+			opacity: 1;	
+			margin-bottom:15px;
+						
+		}
+		&-title{
+			font-family: 'ambleregular';
+			font-size: 24px;
+			opacity: 1;	
+			margin-bottom:30px;
+		}
+		&-divider{
+			
+			width: 48px;
+			height: 2px;
+			background-color: #d87843;
+			margin: 0 auto;
+		}
+	}
+
 	
 }
