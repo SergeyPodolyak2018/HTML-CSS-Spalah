@@ -1,19 +1,26 @@
 @import "variable";
-@button:~'.button';
+@button:~'.button';;
+@button-w:~'.button-wight';
 @button-b:~'.button-black';
 
 @{button}{
-	min-width: 430px;
-	padding:29px;
-	border: 3px solid @wight;
-	color: #ffffff;
+	display: inline-block;
 	font-family: 'ambleregular';
 	font-size: 30px;
 	font-weight: 700;
-	line-height: 60px;	
+	
 	letter-spacing: 1.2px;
 	text-align: center;
 	transition: 0.2s;
+}
+
+
+
+@{button-w}{
+	min-width: 430px;
+	padding:29px;
+	border: 3px solid @wight;
+	color: #ffffff;	
 	&:hover{
 		background-color: @wight;
 		color: black;
@@ -23,14 +30,7 @@
 	min-width: 370px;
 	padding:10px 90px 10px 90px;
 	border: 3px solid @black;
-	color: @black;
-	font-family: 'ambleregular';
-	font-size: 30px;
-	font-weight: 700;
-	line-height: 60px;	
-	letter-spacing: 1.2px;
-	text-align: center;
-	transition: 0.2s;
+	color: @black;	
 	&:hover{
 		background-color: @black;
 		color: @wight;

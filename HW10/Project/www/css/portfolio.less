@@ -19,7 +19,7 @@
 	max-width:1170px;
 	margin: 0 auto;
 	&__titles{
-		margin-bottom:30px;
+		margin-bottom:80px;
 	}
 	&__titles-link{
 		font-family: 'slim_joeregular';
@@ -62,11 +62,10 @@
 	}
 	&__item{		
 		&:hover{
-			// border: 8px solid #000000;
+			
 			& @{portfolio}__card-information{								
 				left:0%							
 			}
-
 			& @{portfolio}__card-information-fon{								
 				right:0%							
 			}
@@ -75,6 +74,7 @@
 	&__card{
 		overflow:hidden;
 		position:relative;
+		display: inline-block;
 		&-information{
 			color:@wight;
 			font-weight: 400;			
@@ -85,10 +85,13 @@
 			transition: 0.2s;
 			top:0px;
 			z-index:100;
-			padding-top:160px;
-			
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
 		}
-		&-information-fon{					
+		&-information-fon{
+			border: 8px solid #000000;					
 			position:absolute;
 			width:370px;
 			height:420px;
@@ -97,30 +100,25 @@
 			top:0px;
 			z-index:50;
 			background-color:@black;
-			opacity: 0.4;
+			opacity: 0.4;			
 		}
 		
 		&-name{
 			font-family: "big_johnregular";
-			font-size: 18px;
-			opacity: 1;	
+			font-size: 18px;			
 			margin-bottom:15px;
-						
 		}
 		&-title{
 			font-family: 'ambleregular';
-			font-size: 24px;
-			opacity: 1;	
+			font-size: 24px;				
 			margin-bottom:30px;
 		}
-		&-divider{
-			
+		&-divider{			
 			width: 48px;
 			height: 2px;
 			background-color: #d87843;
 			margin: 0 auto;
 		}
 	}
-
 	
 }

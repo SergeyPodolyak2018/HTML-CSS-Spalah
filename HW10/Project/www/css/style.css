@@ -339,19 +339,21 @@ body {
   background-image: url("../img/creativity.png");
 }
 .button {
-  min-width: 430px;
-  padding: 29px;
-  border: 3px solid #fffefe;
-  color: #ffffff;
+  display: inline-block;
   font-family: 'ambleregular';
   font-size: 30px;
   font-weight: 700;
-  line-height: 60px;
   letter-spacing: 1.2px;
   text-align: center;
   transition: 0.2s;
 }
-.button:hover {
+.button-wight {
+  min-width: 430px;
+  padding: 29px;
+  border: 3px solid #fffefe;
+  color: #ffffff;
+}
+.button-wight:hover {
   background-color: #fffefe;
   color: black;
 }
@@ -360,13 +362,6 @@ body {
   padding: 10px 90px 10px 90px;
   border: 3px solid #222222;
   color: #222222;
-  font-family: 'ambleregular';
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 60px;
-  letter-spacing: 1.2px;
-  text-align: center;
-  transition: 0.2s;
 }
 .button-black:hover {
   background-color: #222222;
@@ -387,7 +382,7 @@ body {
   margin: 0 auto;
 }
 .portfolio__titles {
-  margin-bottom: 30px;
+  margin-bottom: 80px;
 }
 .portfolio__titles-link {
   font-family: 'slim_joeregular';
@@ -434,6 +429,7 @@ body {
 .portfolio__card {
   overflow: hidden;
   position: relative;
+  display: inline-block;
 }
 .portfolio__card-information {
   color: #fffefe;
@@ -445,9 +441,13 @@ body {
   transition: 0.2s;
   top: 0px;
   z-index: 100;
-  padding-top: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .portfolio__card-information-fon {
+  border: 8px solid #000000;
   position: absolute;
   width: 370px;
   height: 420px;
@@ -461,13 +461,11 @@ body {
 .portfolio__card-name {
   font-family: "big_johnregular";
   font-size: 18px;
-  opacity: 1;
   margin-bottom: 15px;
 }
 .portfolio__card-title {
   font-family: 'ambleregular';
   font-size: 24px;
-  opacity: 1;
   margin-bottom: 30px;
 }
 .portfolio__card-divider {
@@ -475,4 +473,25 @@ body {
   height: 2px;
   background-color: #d87843;
   margin: 0 auto;
+}
+.section-help {
+  background-image: url("../img/hands.png");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.section-clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.section-clients-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
