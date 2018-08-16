@@ -1,0 +1,34 @@
+@import "variable";
+@form:~'.section-form';
+
+@{form}{
+	background-color: grey;
+	position: relative;
+
+	&-container{
+		z-index: 5;
+		position: relative;
+	}
+	&:before{
+		display: block;
+		content: '';
+		width: 30%;
+		position: absolute;
+		left:0;
+		top:0;
+		bottom: 0;
+		z-index: 2;
+		background-color: #f2f2f2;
+	}
+
+
+	&-contact{
+		width: 38%;
+		height:450px;
+		background-color: #f2f2f2;
+		padding: 120px 0;
+
+		
+	}
+	
+}
