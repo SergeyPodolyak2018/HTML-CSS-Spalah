@@ -1,13 +1,15 @@
 @import "variable";
 @form:~'.section-form';
+@form-email:~'.form-email';
 
 @{form}{
-	background-color: grey;
+	background-color: #e4e4e4;;
 	position: relative;
 
 	&-container{
 		z-index: 5;
 		position: relative;
+		display: flex;
 	}
 	&:before{
 		display: block;
@@ -20,9 +22,8 @@
 		z-index: 2;
 		background-color: #f2f2f2;
 	}
-
-
 	&-contact{
+		padding: 120px;
 		width: 38%;
 		height:450px;
 		background-color: #f2f2f2;
@@ -30,5 +31,39 @@
 
 		
 	}
+	&-email{
+		flex-grow: 1;
+		padding: 120px 0px 100px 100px;
+	}
 	
+	
+}
+@{form-email}{
+	height: 100%;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	flex-direction: column;
+	
+	&_row{
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		input{
+			width: 100%;
+			border: 0;
+			background-color: transparent;
+			border-bottom:2px solid #afafaf;;
+			padding: 18px 28px;
+			font-style: italic;
+			font-size: 18px;
+		}
+	}
+	&_wrapper_input{
+		width: 40%;		
+	}
+	&_wrapper_button{
+		
+	}
 }

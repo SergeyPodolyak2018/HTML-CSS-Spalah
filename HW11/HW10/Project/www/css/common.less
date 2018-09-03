@@ -1,0 +1,62 @@
+@import "variable";
+*{
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;	
+	transition: 0.2s;	
+	&:hover{
+		opacity: 0.8;
+	}
+	&:focus{
+		outline: none;
+	}
+}
+p{
+	margin: 0;
+}
+
+body{
+	color: @black;
+	font-size: 22px;
+	line-height: 1.5;
+	font-weight: 300;
+	font-family: "ambleregular";
+
+}
+.container{
+	max-width: @container-width;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+.clearfix:after{
+	&:after{
+		content: '';
+		clear: both;
+		display: block;
+	}
+	
+}
+.divider{
+	width: 86px;
+	height: 2px;
+	margin: 0 auto 40px;
+}
+
+.wight{
+	background-color: @wight-wight;
+}
+.grey{
+	background-color: @wight;
+}
+.black{
+	background-color: @black;
+}
+
+.section-heder{
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 74px;
+	font-family: 'big_johnregular';
+	color:@black;
+}
