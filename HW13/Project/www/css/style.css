@@ -1,8 +1,33 @@
 html{
 	font-size: 14px;
 }
+a{
+	text-decoration: none;	
+	transition: 0.2s;
+	outline: none;	
+	}
+	
+a:hover{
+		opacity: 0.8;
+}
+a:focus{
+	outline: none;
+}
+p{
+	margin: 0;
+}
+
 
 .header-top{
 	padding: 35px 0;
 	border-bottom: 1px solid #dedede;
+	color:#333;
+	
+}
+
+.header-top a{
+	
+	color:#333;
+	
+	
 }
